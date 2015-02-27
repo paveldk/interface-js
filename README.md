@@ -14,8 +14,8 @@ Interface.create accept object as parameter and returns an Interface object. Whe
 By setting a default value you are setting the required value type. Which means that when the interface is implemented if the implementation does not provide the required type or is missing it will throw error.
 
 ```javascript
-  var MyInterface = Interface.create({
-    id: "MyInterface" // id is required so it can later log eventual errors
+  // pass id which is needed for loging eventual errors and the interface itself
+  var MyInterface = Interface.create("MyInterfaceID", {
     boolP: false, // requires boolean in implementation; could be false/true
     stringP: "", // requires string in implementation; could be any string
     numberP: 0, // requires number in implementation; could be any number
