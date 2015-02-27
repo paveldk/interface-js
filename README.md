@@ -22,7 +22,8 @@ By setting a default value you are setting the required value type. Which means 
     arrayP: [], // requires array in implementation; could be empty or not array
     objP: { // requires object in implementation
       subObj: 5 // requires number in implementation
-    }
+    },
+    funcP: function(a, b, c) {} //requires function in implementation and that function should have the same number of arguments
   });
   
   var myObject = new MyInterface({
@@ -32,6 +33,9 @@ By setting a default value you are setting the required value type. Which means 
     arrayP: [1, 2, 3],
     objP: {
       subObj: 10
+    },
+    funcP: function(a, b, c) {
+      
     }
   });
   
