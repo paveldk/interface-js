@@ -32,7 +32,7 @@ var Interface = (function () {
     }
 
     function _isValidLength(value) {
-        return typeof value == 'number' && value > -1 && value % 1 === 0 && value <= _consts.maxSafeInteger;
+        return typeof value == "number" && value > -1 && value % 1 === 0 && value <= _consts.maxSafeInteger;
     }
 
     function _isObjectLike(value) {
@@ -44,7 +44,7 @@ var Interface = (function () {
     }
 
     function _isString(value) {
-        return typeof value == 'string' || (_isObjectLike(value) && _objToString.call(value) == _consts.tags.string) || false;
+        return typeof value == "string" || (_isObjectLike(value) && _objToString.call(value) == _consts.tags.string) || false;
     }
 
     function _isNumber(value) {
@@ -56,7 +56,7 @@ var Interface = (function () {
     }
 
     function _isFunction(value) {
-        return typeof value == 'function' || false;
+        return typeof value == "function" || false;
     }
 
     function _isObject(value) {
