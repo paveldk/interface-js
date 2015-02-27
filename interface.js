@@ -153,7 +153,7 @@ var Interface = (function () {
         var result = {};
 
         if (!args.implementation) {
-            throw new Error(args.id + _consts.errors.missingImplementation);
+            throw new Error(id + _consts.errors.missingImplementation);
         }
 
         _verifyImplementation(args, args.implementation, result, id);
