@@ -3,7 +3,10 @@ Simple Interface implementation for js
 
 ## How it helps
 
-Interface.create accept object as parameter and returns an Interface object. When you create an instance of your Interface you have to pass again an object as parameter. It will then check if the object you passed contains all parameters of the object you passed when creating the Interface. It will also check their Data Type, and works recursive as well.
+Interface.create accept object as parameter and returns an Interface object. When you create an instance of your Interface you have to pass again an object as parameter. It will then check for:
+- all parameters implemented(recursive)
+- parameters Data Type is correct in implementation
+- number of function arguments is correct in implementation
 
 
 ## How to use
